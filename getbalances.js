@@ -13,7 +13,8 @@ fetch(address1)
 
       // Examine the text in the response
       response.json().then(function(data) {
-        console.log(data);
+        //console.log(data);
+		document.getElementById("header").innerHTML = data/100000000;
       });
     }
   )
